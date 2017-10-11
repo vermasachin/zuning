@@ -1,0 +1,333 @@
+/* Shared
+-------------------------------------------------- */
+.button {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Sections
+-------------------------------------------------- */
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
+
+.logo {
+    max-width: 92px;
+    max-height: 31px;
+    margin-bottom: -10px;
+}
+/* Navigation
+-------------------------------------------------- */
+.primary {
+    padding: 10px 0;
+}
+nav.primary {
+    display: table;
+    margin: 0 auto;
+}
+
+nav.primary ul, nav.primary ul li {
+    margin: 0px;
+}
+
+nav.primary select {
+    display: none;
+    width: 100%;
+    height: 28px;
+    margin: 21px 0;
+}
+
+nav.primary ul li {
+    display: inline;
+    position: relative;
+}
+
+nav.primary ul li a {
+    display: inline-block;
+    padding: 12px 36px;
+    color: #7a8084;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+nav.primary ul li a:hover {
+    color: #282828;
+    cursor: pointer;
+}
+
+/* Hero
+-------------------------------------------------- */
+.hero {
+    background-image: url('../images/hero-bg.jpeg');
+    background-size: cover;
+}
+.hero-heading {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 4px #282828;
+
+}
+.hero-subheading {
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.phones {
+    position: relative;
+}
+.phone {
+    position: relative;
+    max-width: 80%;
+    margin: 3rem auto -12rem;
+}
+.phone + .phone {
+    display: none;
+}
+
+.hero .button {
+    border-radius: 100px;
+}
+
+/* Values
+-------------------------------------------------- */
+.values {
+    background: #f9f9f9;
+    background-size: cover;
+    color: #282828;
+    font-weight: 300;
+    padding-bottom: 5rem;
+}
+.value-multiplier {
+    margin-bottom: .5rem;
+    color: #282828;
+}
+.value-heading {
+    margin-bottom: .3rem;
+}
+.value-description {
+    opacity: .8;
+    font-weight: 300;
+}
+
+/* Pricing
+-------------------------------------------------- */
+.package {
+  box-sizing: border-box;
+  width: 301px;
+  border: 3px solid #e8e8e8;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 24px;
+  text-align: center;
+  float: left;
+  -webkit-transition: margin-top 0.5s linear;
+  transition: margin-top 0.5s linear;
+  position: relative;
+  margin-right: 11px;
+}
+.package:hover {
+  margin-top: -10px;
+  -webkit-transition: margin-top 0.3s linear;
+  transition: margin-top 0.3s linear;
+}
+.name {
+  color: #565656;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: -5px;
+}
+.price {
+  margin-top: 7px;
+  font-weight: bold;
+}
+.price::after {
+  content: " / month";
+  font-weight: normal;
+}
+.pricing hr {
+  background-color: #dedede;
+  border: none;
+  height: 1px;
+}
+.trial {
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 2px 21px 2px 21px;
+  color: #10ABC9;
+  border: 1px solid #e4e4e4;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  bottom: -20px;
+}
+.pricing ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 29px;
+}
+.pricing li {
+  margin-bottom: 15px;
+}
+.checkIcon {
+  font-family: 'Material Icons';
+  content: "done";
+}
+.pricing li::before {
+  font-family: 'Material Icons';
+  content: "done";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #10ABC9;
+  margin-right: 4px;
+  vertical-align:middle;
+}
+.brilliant {
+  border-color: #10ABC9;
+}
+/* Triangle */
+.brilliant::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 64px 0 0;
+  border-color: #10ABC9 transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.brilliant::after {
+  font-family: 'Material Icons';
+  content: "done";
+  color: white;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  text-shadow: 0 0 2px #37c5b6;
+  font-size: 1.4rem;
+}
+
+
+
+/* About
+-------------------------------------------------- */
+
+.about p {
+    color: #b6b6b6;
+    font-size: 1.6rem;
+}
+
+/* Map
+-------------------------------------------------- */
+.categories {
+    background: #f9f9f9;
+    background-size: cover;
+}
+.categories .section-description { 
+    margin-bottom: 4rem;
+}  
+
+/* Footer
+-------------------------------------------------- */ 
+
+footer p {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #b4b4b4;
+    padding: 10px 0; 
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+    .section {
+        padding: 12rem 0 11rem;
+    }
+    .hero {
+        padding-bottom: 12rem;
+        text-align: left;
+        height: 165px;
+    }
+    .phone {
+        position: absolute;
+        top: -7rem;
+        right: 3rem;
+        max-height: 362px;
+        z-index: 3;
+    }
+    .phone + .phone {
+        top: -6rem;
+        display: block;
+        max-width: 73.8%;
+        right: 0;
+        z-index: 2;
+        max-height: 338px;
+    }
+    .hero-heading {
+        font-size: 2.4rem;
+    }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+    .hero {
+        height: 190px;
+    }
+    .hero-heading {
+        font-size: 2.6rem;
+    }
+    .section {
+        padding: 14rem 0 15rem;
+    }
+    .hero {
+        padding: 16rem 0 14rem;
+    }
+    .section-description {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phone {
+        top: -14rem;
+        right: 5rem;
+        max-height: 510px;
+    }
+    .phone + .phone {
+        top: -12rem;
+        max-height: 472px;
+    }
+    .categories {
+        padding: 15rem 0 8rem;
+    }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+    .section {
+        padding: 20rem 0 19rem;
+    }
+    .hero {
+        padding: 22rem 0;
+    }
+    .hero-heading {
+        font-size: 4.8rem;
+    }
+    .hero-subheading {
+        font-size: 2.4rem;
+    }
+    .phone {
+        top: -16rem;
+        max-height: 615px;
+    }
+    .phone + .phone {
+        top: -14rem;
+        max-height: 570px;
+    }
+}
