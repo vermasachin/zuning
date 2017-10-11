@@ -4,4 +4,9 @@ jQuery(function( $ ) {
         duration: 900
     });
 
+    $(".toggle-nav").click(function(){
+    $("ul").toggleClass("active");
 });
+
+});
+

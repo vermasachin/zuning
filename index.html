@@ -29,12 +29,11 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+  <script src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCwcrGJgiphi5lf-DF3Bspmdyucuvf2ByE'></script>
 
   <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png">-->
 
 </head>
 <body>
@@ -45,8 +44,9 @@
     <div class="band navigation">
       <nav class="container primary">
         <div class="sixteen columns">
-          <ul>
-            <li><a href="#"><img class="logo" src="images/logo.png"></a></li>
+          <li><a class="logo" href="#"><img class="logo-img" src="images/logo.png"></a></li>
+          <a class="toggle-nav" href="#">&#9776;</a>
+          <ul class="active">
             <li><a href="#values">Courses</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#about">About Us</a></li>
@@ -161,7 +161,7 @@
         <p>Copyright Zuning | 2017 | All Rights Reserved</p>
       </div>
     </footer>
-
+    <script src="js/custom.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
