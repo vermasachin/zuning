@@ -17,8 +17,8 @@
 }
 
 .logo-img {
-  max-width: 92px;
-  max-height: 31px;
+  max-width: 133px;
+  max-height: 45px;
   margin-bottom: -10px;
 }
 
@@ -262,7 +262,7 @@ footer .credits {
   .logo {
     float: left;
     width: auto;
-    padding: 7px;
+    padding: 5px 0 0 0;
   }
 
 
