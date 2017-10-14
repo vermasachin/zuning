@@ -30,6 +30,7 @@
   <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
   <script src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCwcrGJgiphi5lf-DF3Bspmdyucuvf2ByE'></script>
+  <script src="js/custom.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– 
@@ -56,7 +57,8 @@
       </nav>
     </div>
   </header>
-  <!-- Primary Page Layout
+
+  <!-- Hero Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="section hero">
@@ -71,6 +73,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Numbers/Values Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div id="values" class="section values">
     <div class="container">
@@ -94,6 +99,9 @@
     </div>
   </div>
 
+  <!-- About Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <div id="about" class="section about">
     <div class="container">
       <h3 class="section-heading">The World's Best Online Learning Experience</h3>
@@ -101,6 +109,9 @@
       <a class="button button-primary" href="#contact">Get Started</a>
     </div>
   </div>
+
+  <!-- Features Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div id="features" class="section features">
     <div class="container">
@@ -143,22 +154,53 @@
     </div>
   </div>
 
+  <!-- Contact us Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div id="contact" class="section"><h4>Contact Us</h4>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="six columns">
+            <input class="u-full-width" type="email" placeholder="Your Email Address ..." id="exampleEmailInput">
+          </div>
+          <div class="six columns">
+            <select class="u-full-width" id="exampleRecipientInput">
+              <option selected disabled value="Option 1">Reason for Contacting?</option>
+              <option value="Option 2">I have Questions</option>
+              <option value="Option 3">Business Related</option>
+            </select>
+          </div>
+        </div>
+        <textarea class="u-full-width" placeholder="Say Hi ..." id="exampleMessage"></textarea>
+        <input class="button-primary" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <!-- Map Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <div class="section map">
     <div class="">
-      <div style='overflow:hidden;height:420px;width:100%; max-width:1500px;margin:0 auto;'>
+      <div style='overflow:hidden;height:420px;width:100%; max-width:1920px;margin:0 auto;'>
         <div id='gmap_canvas' style='height:420px;width:100%;'></div>
-        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
-        <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Zuning</strong>, 31st St.<br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-        </script>
+        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
       </div>
+      <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Zuning</strong>, 31st St.<br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+      </script>
     </div>
-    <footer>
-      <div class="container">
-        <p class="copyright">Copyright Zuning | 2017 | All Rights Reserved</p>
-        <p class="credits"><a href="https://icons8.com/">Icons by Icons8</a></p>
-      </div>
-    </footer>
-    <script src="js/custom.js"></script>
+  </div>
+
+  <!-- Footer Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <footer>
+    <div class="container">
+      <p class="copyright">Copyright Zuning | 2017 | All Rights Reserved</p>
+      <p class="credits">Designed By <a href="">Sachin Verma</a> | <a class="icons8" href="https://icons8.com/">Icons by Icons8</a></p>
+    </div>
+  </footer>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
